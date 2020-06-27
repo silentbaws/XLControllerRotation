@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Param xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ShortcutKeyId>3</ShortcutKeyId>
+  <CheckUpdates>1</CheckUpdates>
+  <ShowOnStart>0</ShowOnStart>
+  <WindowWidth>0</WindowWidth>
+  <WindowHeight>0</WindowHeight>
+  <UIScale>0.997340441</UIScale>
+  <ModParams>
+    <Mod Id="blendermf.XLShredMenu" Enabled="true" />
+    <Mod Id="SoundMod" Enabled="false" />
+    <Mod Id="XLMultiplayer" Enabled="true" />
+  </ModParams>
+</Param>

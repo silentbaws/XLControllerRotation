@@ -1,0 +1,11 @@
+﻿{
+  "Id": "XLControllerRotation",
+  "DisplayName": "Silents Controller Rotation",
+  "Author": "Silentbaws",
+  "Version": "0.1.0",
+  "GameVersion": "0.3.0",
+  "ManagerVersion": "0.22.6",
+  "Requirements": [],
+  "AssemblyName": "XLControllerRotation.dll",
+  "EntryMethod": "XLControllerRotation.Main.Load"
+}
