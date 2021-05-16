@@ -36,11 +36,67 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="Assembly-CSharp">
-      <HintPath>..\..\XLMultiplayer\References\Assembly-CSharp.dll</HintPath>
+      <HintPath>..\References\Assembly-CSharp.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Assembly-CSharp-firstpass">
-      <HintPath>..\..\XLMultiplayer\References\Assembly-CSharp-firstpass.dll</HintPath>
+      <HintPath>..\References\Assembly-CSharp-firstpass.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="AwaitExtensions">
+      <HintPath>..\References\AwaitExtensions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="BFSAnimationCombiner">
+      <HintPath>..\References\BFSAnimationCombiner.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="BFSBuildTool">
+      <HintPath>..\References\BFSBuildTool.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="BFSCheats">
+      <HintPath>..\References\BFSCheats.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="BFSConsole">
+      <HintPath>..\References\BFSConsole.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="BFSSaveSystem">
+      <HintPath>..\References\BFSSaveSystem.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="BFSUI">
+      <HintPath>..\References\BFSUI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="BFSUtilities">
+      <HintPath>..\References\BFSUtilities.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="BFSUtils_SaveManager">
+      <HintPath>..\References\BFSUtils_SaveManager.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="ConsoleManagers">
+      <HintPath>..\References\ConsoleManagers.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\References\ICSharpCode.SharpZipLib.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Mixpanel">
+      <HintPath>..\References\Mixpanel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Mono.Posix">
+      <HintPath>..\References\Mono.Posix.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Mono.Security">
+      <HintPath>..\References\Mono.Security.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
@@ -51,303 +107,303 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
     <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>..\..\XLMultiplayer\References\Unity.Analytics.DataPrivacy.dll</HintPath>
+      <HintPath>..\References\Unity.Analytics.DataPrivacy.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>..\..\XLMultiplayer\References\Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>..\References\Unity.Analytics.StandardEvents.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>..\..\XLMultiplayer\References\Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>..\References\Unity.Analytics.Tracker.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.MemoryProfiler">
-      <HintPath>..\..\XLMultiplayer\References\Unity.MemoryProfiler.dll</HintPath>
+      <HintPath>..\References\Unity.MemoryProfiler.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.Polybrush">
-      <HintPath>..\..\XLMultiplayer\References\Unity.Polybrush.dll</HintPath>
+      <HintPath>..\References\Unity.Polybrush.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.Postprocessing.Runtime">
-      <HintPath>..\..\XLMultiplayer\References\Unity.Postprocessing.Runtime.dll</HintPath>
+      <HintPath>..\References\Unity.Postprocessing.Runtime.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Runtime">
-      <HintPath>..\..\XLMultiplayer\References\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+      <HintPath>..\References\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
-      <HintPath>..\..\XLMultiplayer\References\Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+      <HintPath>..\References\Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.RenderPipelines.HighDefinition.Runtime">
-      <HintPath>..\..\XLMultiplayer\References\Unity.RenderPipelines.HighDefinition.Runtime.dll</HintPath>
+      <HintPath>..\References\Unity.RenderPipelines.HighDefinition.Runtime.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>..\..\XLMultiplayer\References\Unity.TextMeshPro.dll</HintPath>
+      <HintPath>..\References\Unity.TextMeshPro.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine">
-      <HintPath>..\..\XLMultiplayer\References\UnityEngine.dll</HintPath>
+      <HintPath>..\References\UnityEngine.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.AccessibilityModule">
-      <HintPath>..\..\XLMultiplayer\References\UnityEngine.AccessibilityModule.dll</HintPath>
+      <HintPath>..\References\UnityEngine.AccessibilityModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.Advertisements">
-      <HintPath>..\..\XLMultiplayer\References\UnityEngine.Advertisements.dll</HintPath>
+      <HintPath>..\References\UnityEngine.Advertisements.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
-      <HintPath>..\..\XLMultiplayer\References\UnityEngine.AIModule.dll</HintPath>
+      <HintPath>..\References\UnityEngine.AIModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.AnimationModule">
-      <HintPath>..\..\XLMultiplayer\References\UnityEngine.AnimationModule.dll</HintPath>
+      <HintPath>..\References\UnityEngine.AnimationModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.ARModule">
-      <HintPath>..\..\XLMultiplayer\References\UnityEngine.ARModule.dll</HintPath>
+      <HintPath>..\References\UnityEngine.ARModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.AssetBundleModule">
-      <HintPath>..\..\XLMultiplayer\References\UnityEngine.AssetBundleModule.dll</HintPath>
+      <HintPath>..\References\UnityEngine.AssetBundleModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.AudioModule">
-      <HintPath>..\..\XLMultiplayer\References\UnityEngine.AudioModule.dll</HintPath>
+      <HintPath>..\References\UnityEngine.AudioModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.BaselibModule">
-      <HintPath>..\..\XLMultiplayer\References\UnityEngine.BaselibModule.dll</HintPath>
+      <HintPath>..\References\UnityEngine.BaselibModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.ClothModule">
-      <HintPath>..\..\XLMultiplayer\References\UnityEngine.ClothModule.dll</HintPath>
+      <HintPath>..\References\UnityEngine.ClothModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.ClusterInputModule">
-      <HintPath>..\..\XLMultiplayer\References\UnityEngine.ClusterInputModule.dll</HintPath>
+      <HintPath>..\References\UnityEngine.ClusterInputModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.ClusterRendererModule">
-      <HintPath>..\..\XLMultiplayer\References\UnityEngine.ClusterRendererModule.dll</HintPath>
+      <HintPath>..\References\UnityEngine.ClusterRendererModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.CoreModule">
-      <HintPath>..\..\XLMultiplayer\References\UnityEngine.CoreModule.dll</HintPath>
+      <HintPath>..\References\UnityEngine.CoreModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.CrashReportingModule">
-      <HintPath>..\..\XLMultiplayer\References\UnityEngine.CrashReportingModule.dll</HintPath>
+      <HintPath>..\References\UnityEngine.CrashReportingModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.DirectorModule">
-      <HintPath>..\..\XLMultiplayer\References\UnityEngine.DirectorModule.dll</HintPath>
+      <HintPath>..\References\UnityEngine.DirectorModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.FileSystemHttpModule">
-      <HintPath>..\..\XLMultiplayer\References\UnityEngine.FileSystemHttpModule.dll</HintPath>
+      <HintPath>..\References\UnityEngine.FileSystemHttpModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.GameCenterModule">
-      <HintPath>..\..\XLMultiplayer\References\UnityEngine.GameCenterModule.dll</HintPath>
+      <HintPath>..\References\UnityEngine.GameCenterModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.GridModule">
-      <HintPath>..\..\XLMultiplayer\References\UnityEngine.GridModule.dll</HintPath>
+      <HintPath>..\References\UnityEngine.GridModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.HotReloadModule">
-      <HintPath>..\..\XLMultiplayer\References\UnityEngine.HotReloadModule.dll</HintPath>
+      <HintPath>..\References\UnityEngine.HotReloadModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.ImageConversionModule">
-      <HintPath>..\..\XLMultiplayer\References\UnityEngine.ImageConversionModule.dll</HintPath>
+      <HintPath>..\References\UnityEngine.ImageConversionModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.IMGUIModule">
-      <HintPath>..\..\XLMultiplayer\References\UnityEngine.IMGUIModule.dll</HintPath>
+      <HintPath>..\References\UnityEngine.IMGUIModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.InputModule">
-      <HintPath>..\..\XLMultiplayer\References\UnityEngine.InputModule.dll</HintPath>
+      <HintPath>..\References\UnityEngine.InputModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.JSONSerializeModule">
-      <HintPath>..\..\XLMultiplayer\References\UnityEngine.JSONSerializeModule.dll</HintPath>
+      <HintPath>..\References\UnityEngine.JSONSerializeModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.LocalizationModule">
-      <HintPath>..\..\XLMultiplayer\References\UnityEngine.LocalizationModule.dll</HintPath>
+      <HintPath>..\References\UnityEngine.LocalizationModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.Networking">
-      <HintPath>..\..\XLMultiplayer\References\UnityEngine.Networking.dll</HintPath>
+      <HintPath>..\References\UnityEngine.Networking.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.ParticleSystemModule">
-      <HintPath>..\..\XLMultiplayer\References\UnityEngine.ParticleSystemModule.dll</HintPath>
+      <HintPath>..\References\UnityEngine.ParticleSystemModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.PerformanceReportingModule">
-      <HintPath>..\..\XLMultiplayer\References\UnityEngine.PerformanceReportingModule.dll</HintPath>
+      <HintPath>..\References\UnityEngine.PerformanceReportingModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.Physics2DModule">
-      <HintPath>..\..\XLMultiplayer\References\UnityEngine.Physics2DModule.dll</HintPath>
+      <HintPath>..\References\UnityEngine.Physics2DModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.PhysicsModule">
-      <HintPath>..\..\XLMultiplayer\References\UnityEngine.PhysicsModule.dll</HintPath>
+      <HintPath>..\References\UnityEngine.PhysicsModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.ProfilerModule">
-      <HintPath>..\..\XLMultiplayer\References\UnityEngine.ProfilerModule.dll</HintPath>
+      <HintPath>..\References\UnityEngine.ProfilerModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.ScreenCaptureModule">
-      <HintPath>..\..\XLMultiplayer\References\UnityEngine.ScreenCaptureModule.dll</HintPath>
+      <HintPath>..\References\UnityEngine.ScreenCaptureModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.SharedInternalsModule">
-      <HintPath>..\..\XLMultiplayer\References\UnityEngine.SharedInternalsModule.dll</HintPath>
+      <HintPath>..\References\UnityEngine.SharedInternalsModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.SpatialTracking">
-      <HintPath>..\..\XLMultiplayer\References\UnityEngine.SpatialTracking.dll</HintPath>
+      <HintPath>..\References\UnityEngine.SpatialTracking.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.SpriteMaskModule">
-      <HintPath>..\..\XLMultiplayer\References\UnityEngine.SpriteMaskModule.dll</HintPath>
+      <HintPath>..\References\UnityEngine.SpriteMaskModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.SpriteShapeModule">
-      <HintPath>..\..\XLMultiplayer\References\UnityEngine.SpriteShapeModule.dll</HintPath>
+      <HintPath>..\References\UnityEngine.SpriteShapeModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.StreamingModule">
-      <HintPath>..\..\XLMultiplayer\References\UnityEngine.StreamingModule.dll</HintPath>
+      <HintPath>..\References\UnityEngine.StreamingModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.StyleSheetsModule">
-      <HintPath>..\..\XLMultiplayer\References\UnityEngine.StyleSheetsModule.dll</HintPath>
+      <HintPath>..\References\UnityEngine.StyleSheetsModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.SubstanceModule">
-      <HintPath>..\..\XLMultiplayer\References\UnityEngine.SubstanceModule.dll</HintPath>
+      <HintPath>..\References\UnityEngine.SubstanceModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.TerrainModule">
-      <HintPath>..\..\XLMultiplayer\References\UnityEngine.TerrainModule.dll</HintPath>
+      <HintPath>..\References\UnityEngine.TerrainModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.TerrainPhysicsModule">
-      <HintPath>..\..\XLMultiplayer\References\UnityEngine.TerrainPhysicsModule.dll</HintPath>
+      <HintPath>..\References\UnityEngine.TerrainPhysicsModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.TextCoreModule">
-      <HintPath>..\..\XLMultiplayer\References\UnityEngine.TextCoreModule.dll</HintPath>
+      <HintPath>..\References\UnityEngine.TextCoreModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.TextRenderingModule">
-      <HintPath>..\..\XLMultiplayer\References\UnityEngine.TextRenderingModule.dll</HintPath>
+      <HintPath>..\References\UnityEngine.TextRenderingModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.TilemapModule">
-      <HintPath>..\..\XLMultiplayer\References\UnityEngine.TilemapModule.dll</HintPath>
+      <HintPath>..\References\UnityEngine.TilemapModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.Timeline">
-      <HintPath>..\..\XLMultiplayer\References\UnityEngine.Timeline.dll</HintPath>
+      <HintPath>..\References\UnityEngine.Timeline.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.TimelineModule">
-      <HintPath>..\..\XLMultiplayer\References\UnityEngine.TimelineModule.dll</HintPath>
+      <HintPath>..\References\UnityEngine.TimelineModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.TLSModule">
-      <HintPath>..\..\XLMultiplayer\References\UnityEngine.TLSModule.dll</HintPath>
+      <HintPath>..\References\UnityEngine.TLSModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>..\..\XLMultiplayer\References\UnityEngine.UI.dll</HintPath>
+      <HintPath>..\References\UnityEngine.UI.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.UIElementsModule">
-      <HintPath>..\..\XLMultiplayer\References\UnityEngine.UIElementsModule.dll</HintPath>
+      <HintPath>..\References\UnityEngine.UIElementsModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.UIModule">
-      <HintPath>..\..\XLMultiplayer\References\UnityEngine.UIModule.dll</HintPath>
+      <HintPath>..\References\UnityEngine.UIModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.UmbraModule">
-      <HintPath>..\..\XLMultiplayer\References\UnityEngine.UmbraModule.dll</HintPath>
+      <HintPath>..\References\UnityEngine.UmbraModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.UNETModule">
-      <HintPath>..\..\XLMultiplayer\References\UnityEngine.UNETModule.dll</HintPath>
+      <HintPath>..\References\UnityEngine.UNETModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.UnityAnalyticsModule">
-      <HintPath>..\..\XLMultiplayer\References\UnityEngine.UnityAnalyticsModule.dll</HintPath>
+      <HintPath>..\References\UnityEngine.UnityAnalyticsModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.UnityConnectModule">
-      <HintPath>..\..\XLMultiplayer\References\UnityEngine.UnityConnectModule.dll</HintPath>
+      <HintPath>..\References\UnityEngine.UnityConnectModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.UnityTestProtocolModule">
-      <HintPath>..\..\XLMultiplayer\References\UnityEngine.UnityTestProtocolModule.dll</HintPath>
+      <HintPath>..\References\UnityEngine.UnityTestProtocolModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
-      <HintPath>..\..\XLMultiplayer\References\UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+      <HintPath>..\References\UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.UnityWebRequestAudioModule">
-      <HintPath>..\..\XLMultiplayer\References\UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+      <HintPath>..\References\UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.UnityWebRequestModule">
-      <HintPath>..\..\XLMultiplayer\References\UnityEngine.UnityWebRequestModule.dll</HintPath>
+      <HintPath>..\References\UnityEngine.UnityWebRequestModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.UnityWebRequestTextureModule">
-      <HintPath>..\..\XLMultiplayer\References\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+      <HintPath>..\References\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.UnityWebRequestWWWModule">
-      <HintPath>..\..\XLMultiplayer\References\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+      <HintPath>..\References\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.VehiclesModule">
-      <HintPath>..\..\XLMultiplayer\References\UnityEngine.VehiclesModule.dll</HintPath>
+      <HintPath>..\References\UnityEngine.VehiclesModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.VFXModule">
-      <HintPath>..\..\XLMultiplayer\References\UnityEngine.VFXModule.dll</HintPath>
+      <HintPath>..\References\UnityEngine.VFXModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.VideoModule">
-      <HintPath>..\..\XLMultiplayer\References\UnityEngine.VideoModule.dll</HintPath>
+      <HintPath>..\References\UnityEngine.VideoModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.VRModule">
-      <HintPath>..\..\XLMultiplayer\References\UnityEngine.VRModule.dll</HintPath>
+      <HintPath>..\References\UnityEngine.VRModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.WindModule">
-      <HintPath>..\..\XLMultiplayer\References\UnityEngine.WindModule.dll</HintPath>
+      <HintPath>..\References\UnityEngine.WindModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.XRModule">
-      <HintPath>..\..\XLMultiplayer\References\UnityEngine.XRModule.dll</HintPath>
+      <HintPath>..\References\UnityEngine.XRModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityModManager">
@@ -355,7 +411,7 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="XInputDotNetPure">
-      <HintPath>..\..\XLMultiplayer\References\XInputDotNetPure.dll</HintPath>
+      <HintPath>..\References\XInputDotNetPure.dll</HintPath>
       <Private>False</Private>
     </Reference>
   </ItemGroup>
