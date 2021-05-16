@@ -15,6 +15,8 @@ namespace XLControllerRotation {
 		public bool switchFlipSticks = false;
 		public bool regularInvertX = false;
 		public bool switchInvertX = false;
+		public bool regularInvertY = false;
+		public bool switchInvertY = false;
 
 		public override void Save(UnityModManager.ModEntry modEntry) {
 			Save(this, modEntry);
@@ -100,6 +102,14 @@ namespace XLControllerRotation {
 				settings.switchInvertX = GUILayout.Toggle(settings.switchInvertX, "Switch", GUILayout.MinWidth(100));
 			}
 			GUILayout.EndHorizontal();
+
+			GUILayout.BeginHorizontal();
+			{
+				GUILayout.Label("Invert Y Axis", GUILayout.MinWidth(100));
+				settings.regularInvertY = GUILayout.Toggle(settings.regularInvertY, "Regular", GUILayout.MinWidth(100));
+				settings.switchInvertY = GUILayout.Toggle(settings.switchInvertY, "Switch", GUILayout.MinWidth(100));
+			}
+			GUILayout.EndHorizontal();
 		}
 		
 		static void OnSaveGUI(UnityModManager.ModEntry modEntry) {
@@ -135,6 +145,12 @@ namespace XLControllerRotation {
 				if ((settings.switchInvertX && PlayerController.Instance.IsSwitch) || (settings.regularInvertX && !PlayerController.Instance.IsSwitch)) {
 					__instance.leftX = -__instance.leftX;
 					__instance.rightX = -__instance.rightX;
+				}
+
+				if ((settings.switchInvertY && PlayerController.Instance.IsSwitch) || (settings.regularInvertY && !PlayerController.Instance.IsSwitch))
+				{
+					__instance.leftY = -__instance.leftY;
+					__instance.rightY = -__instance.rightY;
 				}
 			}
 
