@@ -407,12 +407,18 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityModManager">
-      <HintPath>..\..\XLMultiplayer\References\UnityModManager\UnityModManager.dll</HintPath>
+      <HintPath>..\References\UnityModManager\UnityModManager.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="XInputDotNetPure">
       <HintPath>..\References\XInputDotNetPure.dll</HintPath>
       <Private>False</Private>
+    </Reference>
+    <Reference Include="Rewired_Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\References\Rewired_Core.dll</HintPath>
+    </Reference>
+    <Reference Include="SkaterXL.Gameplay">
+      <HintPath>..\References\SkaterXL.Gameplay.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

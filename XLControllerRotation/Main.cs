@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Reflection;
 using HarmonyLib;
+using SkaterXL.Gameplay;
 using UnityEngine;
 using UnityModManagerNet;
 using XInputDotNetPure;
-using static InputThread;
+using static SkaterXL.Gameplay.InputThread;
 
 namespace XLControllerRotation {
 	[Serializable]
@@ -121,7 +122,7 @@ namespace XLControllerRotation {
 		static class wowWTF {
 			static Vector2 RotateInputVector2(float x, float y) {
 				Vector2 inputDir = new Vector2(x, y);
-				float rot = Mathf.Deg2Rad * (PlayerController.Instance.IsSwitch ? Main.settings.switchControlRotation : Main.settings.regularControlRotation);
+				float rot = Mathf.Deg2Rad * (PlayerController.Instances[PlayerController.Instances.Count - 1].gameplay.playerData.IsSwitch ? Main.settings.switchControlRotation : Main.settings.regularControlRotation);
 				Vector2 newInput = new Vector2(inputDir.x * Mathf.Cos(rot) - inputDir.y * Mathf.Sin(rot), inputDir.y * Mathf.Cos(rot) + inputDir.x * Mathf.Sin(rot));
 				return newInput;
 			}
@@ -130,7 +131,7 @@ namespace XLControllerRotation {
 				Vector2 leftInput = RotateInputVector2(__instance.leftX, __instance.leftY);
 				Vector2 rightInput = RotateInputVector2(__instance.rightX, __instance.rightY);
 
-				if ((settings.switchFlipSticks && PlayerController.Instance.IsSwitch) || (settings.regularFlipSticks && !PlayerController.Instance.IsSwitch)) {
+				if ((settings.switchFlipSticks && PlayerController.Instances[PlayerController.Instances.Count - 1].gameplay.playerData.IsSwitch) || (settings.regularFlipSticks && !PlayerController.Instances[PlayerController.Instances.Count - 1].gameplay.playerData.IsSwitch)) {
 					__instance.leftX = rightInput.x;
 					__instance.leftY = rightInput.y;
 					__instance.rightX = leftInput.x;
@@ -142,12 +143,12 @@ namespace XLControllerRotation {
 					__instance.rightY = rightInput.y;
 				}
 
-				if ((settings.switchInvertX && PlayerController.Instance.IsSwitch) || (settings.regularInvertX && !PlayerController.Instance.IsSwitch)) {
+				if ((settings.switchInvertX && PlayerController.Instances[PlayerController.Instances.Count - 1].gameplay.playerData.IsSwitch) || (settings.regularInvertX && !PlayerController.Instances[PlayerController.Instances.Count - 1].gameplay.playerData.IsSwitch)) {
 					__instance.leftX = -__instance.leftX;
 					__instance.rightX = -__instance.rightX;
 				}
 
-				if ((settings.switchInvertY && PlayerController.Instance.IsSwitch) || (settings.regularInvertY && !PlayerController.Instance.IsSwitch))
+				if ((settings.switchInvertY && PlayerController.Instances[PlayerController.Instances.Count - 1].gameplay.playerData.IsSwitch) || (settings.regularInvertY && !PlayerController.Instances[PlayerController.Instances.Count - 1].gameplay.playerData.IsSwitch))
 				{
 					__instance.leftY = -__instance.leftY;
 					__instance.rightY = -__instance.rightY;
@@ -161,10 +162,10 @@ namespace XLControllerRotation {
 
 				if (_pos < __instance._maxLength) {
 					if (state.IsConnected) {
-						__instance.inputsIn[_pos].leftX = __instance.leftXFilter.Filter((double)state.ThumbSticks.Left.X);
-						__instance.inputsIn[_pos].leftY = __instance.leftYFilter.Filter((double)state.ThumbSticks.Left.Y);
-						__instance.inputsIn[_pos].rightX = __instance.rightXFilter.Filter((double)state.ThumbSticks.Right.X);
-						__instance.inputsIn[_pos].rightY = __instance.rightYFilter.Filter((double)state.ThumbSticks.Right.Y);
+						__instance.inputsIn[_pos].leftX = __instance.leftXFilter.Filter((float)state.ThumbSticks.Left.X);
+						__instance.inputsIn[_pos].leftY = __instance.leftYFilter.Filter((float)state.ThumbSticks.Left.Y);
+						__instance.inputsIn[_pos].rightX = __instance.rightXFilter.Filter((float)state.ThumbSticks.Right.X);
+						__instance.inputsIn[_pos].rightY = __instance.rightYFilter.Filter((float)state.ThumbSticks.Right.Y);
 						RotateInput(ref __instance.inputsIn[_pos]);
 						__instance.inputsIn[_pos].time = DateTime.UtcNow.Ticks;
 						__instance.inputsIn[_pos].leftXVel = Traverse.Create(__instance).Method("GetVel", __instance.inputsIn[_pos].leftX, _lastFrameData.leftX, __instance.inputsIn[_pos].time, _lastFrameData.time).GetValue<float>();
@@ -180,13 +181,15 @@ namespace XLControllerRotation {
 						Traverse.Create(__instance).Field("_pos").SetValue(_pos + 1);
 						return false;
 					}
-					if (__instance.inputController == null || Traverse.Create(__instance.inputController).Field("player").GetValue() == null) {
+
+					if (__instance.inputController == null || __instance.inputController.rewiredPlayer == null) {
 						return false;
 					}
-					__instance.inputsIn[_pos].leftX = __instance.leftXFilter.Filter((double)((Mathf.Abs(Traverse.Create(__instance).Method("GetAxisLX").GetValue<float>()) < 0.1f) ? 0f : Traverse.Create(__instance).Method("GetAxisLX").GetValue<float>()));
-					__instance.inputsIn[_pos].leftY = __instance.leftYFilter.Filter((double)Traverse.Create(__instance).Method("GetAxisLY").GetValue<float>());
-					__instance.inputsIn[_pos].rightX = __instance.rightXFilter.Filter((double)((Mathf.Abs(Traverse.Create(__instance).Method("GetAxisRX").GetValue<float>()) < 0.1f) ? 0f : Traverse.Create(__instance).Method("GetAxisRX").GetValue<float>()));
-					__instance.inputsIn[_pos].rightY = __instance.rightYFilter.Filter((double)Traverse.Create(__instance).Method("GetAxisRY").GetValue<float>());
+
+					__instance.inputsIn[_pos].leftX = __instance.leftXFilter.Filter((float)((Mathf.Abs(Traverse.Create(__instance).Method("GetAxisLX").GetValue<float>()) < 0.1f) ? 0f : Traverse.Create(__instance).Method("GetAxisLX").GetValue<float>()));
+					__instance.inputsIn[_pos].leftY = __instance.leftYFilter.Filter((float)Traverse.Create(__instance).Method("GetAxisLY").GetValue<float>());
+					__instance.inputsIn[_pos].rightX = __instance.rightXFilter.Filter((float)((Mathf.Abs(Traverse.Create(__instance).Method("GetAxisRX").GetValue<float>()) < 0.1f) ? 0f : Traverse.Create(__instance).Method("GetAxisRX").GetValue<float>()));
+					__instance.inputsIn[_pos].rightY = __instance.rightYFilter.Filter((float)Traverse.Create(__instance).Method("GetAxisRY").GetValue<float>());
 					RotateInput(ref __instance.inputsIn[_pos]);
 					__instance.inputsIn[_pos].time = DateTime.UtcNow.Ticks;
 					__instance.inputsIn[_pos].leftXVel = Traverse.Create(__instance).Method("GetVel", __instance.inputsIn[_pos].leftX, _lastFrameData.leftX, __instance.inputsIn[_pos].time, _lastFrameData.time).GetValue<float>();
